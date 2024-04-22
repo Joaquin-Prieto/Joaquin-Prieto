@@ -1,0 +1,15 @@
+.detailContainer{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.detailImg{
+width: 350px;
+height: 350px;
+}
+.detailTextDiv{
+margin-top: 60px;
+
+}
