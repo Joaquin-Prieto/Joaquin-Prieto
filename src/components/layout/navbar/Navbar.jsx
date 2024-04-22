@@ -1,19 +1,21 @@
-import { Carticon } from "../../common/Carticon";
+import { CartIcon } from "../../common/cartIcon/CartIcon";
 import "./Navbar.css"
+import { Link } from "react-router-dom";
 
 export const Navbar = () => {
   return (
     <>
     <div className={"padre"}>
-      <div>
-        <img src="./public/GPLogopng.png" alt="" />
-      </div>
+      <Link to="/"><div>
+        <img src="./GPLogopng.png" alt="" />
+      </div></Link>
       <ul>
-        <a href="#"><li>Todo</li></a>
-        <a href="#"><li>Placas Graficas</li></a>
-        <a href="#" ><li>Procesadores</li></a>
+        <Link to="/" className="li">Todo</Link>
+        <Link to="/category/placas-graficas" className="li">Placas Graficas</Link>
+        <Link to="/category/procesadores" className="li">Procesadores</Link>
       </ul>
-    <Carticon/>
+    
+     <CartIcon/> 
      
     </div>
     </>

@@ -1,0 +1,25 @@
+
+.footer{
+
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    bottom: 0;
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    background-color: #e1e1e1;
+
+}
+.footerLi{
+    margin-bottom: 10px;
+}
+.footerbelow{
+    background-color: #e1e1e1;
+    padding-bottom: 20px;
+    text-align: center;
+}
