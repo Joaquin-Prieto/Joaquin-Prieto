@@ -1,0 +1,14 @@
+.formDiv{
+    margin: 30px;
+    display: flex;
+    flex-direction: row ;
+    justify-content: center;
+  text-align: center;
+}
+.textFieldCheckout{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.formH1{
+    margin-bottom: 50px;
+}

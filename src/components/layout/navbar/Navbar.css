@@ -31,3 +31,18 @@ a:hover {
  text-decoration: underline;
  text-decoration-color: black;
 }
+.navImg{
+  width: 100%;
+}
+.navSections{
+  width: 70%;
+  display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+align-items: center;
+}
+.navSection{
+  width: 150px;
+  font-size: 18px;
+  font-family: "Ubuntu Sans", sans-serif;
+}

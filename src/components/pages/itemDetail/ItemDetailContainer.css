@@ -3,6 +3,7 @@
     justify-content: space-evenly;
     padding-top: 50px;
     padding-bottom: 50px;
+    font-family:sans-serif;
 }
 
 .detailImg{
@@ -11,5 +12,13 @@ height: 350px;
 }
 .detailTextDiv{
 margin-top: 60px;
-
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 30px;
+}
+.detailInfo{
+    display: flex;
+    flex-direction: column;
+    gap:40px
 }

@@ -6,8 +6,10 @@ import {Outlet} from "react-router-dom"
 export const Layout = () => {
   return (
     <div>
-    <Navbar />    
+    <Navbar />   
+    <div style={{minHeight:"calc(100vh - 250px)"}}>
     <Outlet />
+    </div>
     <Footer />
     </div>
    

@@ -16,7 +16,6 @@ const ItemCards = ({ id, img ,title, description, price }) => {
         <CardMedia
           sx={{ height: 345 }}
           image={img}
-          title="green iguana"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">

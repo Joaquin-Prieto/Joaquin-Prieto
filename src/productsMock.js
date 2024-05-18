@@ -1,38 +1,31 @@
 export let products = [
   {
-    id: 1,
-    title: "Gigabyte RTX 4060 Ti Gaming OC 16gb",
-    price: 479.99,
-    description: "3X WINDFORCE fans, 16gb 128-bit GDDR6 vRAM",
-    stock: 25,
-    category: "placas-graficas",
-    img: "https://res.cloudinary.com/deo4pafo4/image/upload/v1713411627/tkjelyan8lfl8kdv574n.jpg",
-  },
-  {
-    id: 2,
-    title: "AORUS RTX 3070 Master 8gb",
-    price: 799.99,
-    description: "3X WINDFORCE fans, 8GB 256-bit GDDR6 vRAM",
-    stock: 16,
-    category: "placas-graficas",
-    img: "https://res.cloudinary.com/deo4pafo4/image/upload/v1713412406/b7lekpgtmrnkhr6ud7ac.png",
-  },
-  {
-    id: 3,
-    title: "AMD Ryzen 7 5700g",
-    price: 180,
-    description: "Gaming Desktop Processor with Integrated Graphics and 12 (8P+4E) Cores uo to 5.0GHz Unlocked.",
-    stock: 50,
+    title: "AMD Ryzen 5 5600X ",
+    price: 130,
+    description: "6 Core, 12 Thread Unlocked Processor",
+    stock: 61,
     category: "procesadores",
-    img: "https://res.cloudinary.com/deo4pafo4/image/upload/v1713452147/gm3mxvbh4o5labuugxsw.jpg",
+    img: "https://res.cloudinary.com/dfhfkr3ln/image/upload/v1715999582/tn4bprishve6ucbrmfjf.jpg",
   },
+ 
+
   {
-    id: 4,
-    title: "Intel Core i7 12700K",
-    price: 200,
-    description: "8-Core, 16-Thread Unlocked Desktop Processor",
-    stock: 30,
+    title: "AMD Ryzen 9 7950X3D",
+    price: 700,
+    description: "16 core, 32 Thread Processor",
+    stock: 19,
     category: "procesadores",
-    img: "https://res.cloudinary.com/deo4pafo4/image/upload/v1713452811/tvhyvb6htiiwduhmr8zk.jpg",
+    img: "https://res.cloudinary.com/dfhfkr3ln/image/upload/v1715999653/ds0m9cz0181nx5lyhjfv.webp",
   },
+  
+  {
+    title: "Intel Core i9 14900KF",
+    price: 620,
+    description: "24 cores (8 P-cores + 16 E-cores) - Unlocked",
+    stock: 22,
+    category: "procesadores",
+    img: "https://res.cloudinary.com/dfhfkr3ln/image/upload/v1715999851/fyrnfryiqfcq6qyd6dpj.jpg",
+  },
+  
+
 ];

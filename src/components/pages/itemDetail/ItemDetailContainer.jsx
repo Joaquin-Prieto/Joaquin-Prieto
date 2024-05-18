@@ -1,28 +1,52 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { products } from "../../../productsMock";
 import ItemDetail from "./ItemDetail";
 import { useParams } from "react-router-dom";
 import "./ItemDetailContainer.css"
+import { CartContext } from "../../../context/CartContext";
+import Swal from "sweetalert2";
+import { db } from "../../../firebaseConfig";
+import {collection, doc, getDoc} from "firebase/firestore"
 
 const ItemDetailContainer = () => {
 
     const {id} = useParams()
-    console.log(id)
 
     const [item, setItem] = useState({})
 
+
+    const { addToCart, getQuantityById } = useContext(CartContext)
+
+    let initial = getQuantityById(+id)
+
     useEffect(() =>{
-        let itemEncontrado = products.find((product) => product.id === +id)
-        const getProduct = new Promise((resolve, reject)=>{
-            resolve(itemEncontrado)
+       
+        let productsCollection = collection( db , "products")
+        let refDoc = doc(productsCollection, id)
+        getDoc(refDoc).then(res =>{
+            setItem({id: res.id, ...res.data()})
         })
-        getProduct.then((res)=> setItem(res))
 
     }, [id])
-    
-    console.log(item)
 
-    return <ItemDetail item={item}/>;
+    const onAdd = (cantidad) => {
+        
+        
+        
+        let product = {...item, quantity: cantidad};
+        addToCart(product)
+
+        Swal.fire({
+            position:"center",
+            icon:"success",
+            title:"Tu producto ha sido agregado",
+            showConfirmButton:false,
+            timer:1500,
+        })
+    }
+    
+
+    return <ItemDetail item={item} onAdd={onAdd} initial={initial} />;
 };
 
 export default ItemDetailContainer
