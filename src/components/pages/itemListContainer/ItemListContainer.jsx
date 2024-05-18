@@ -5,6 +5,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import { PacmanLoader } from "react-spinners";
 import { Skeleton } from "@mui/material";
 import { db } from "../../../firebaseConfig";
+import "./ItemListContainer.css"
 
 import { addDoc, collection, getDocs, query, where } from "firebase/firestore";
 
