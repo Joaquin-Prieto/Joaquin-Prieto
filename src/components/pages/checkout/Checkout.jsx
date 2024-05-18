@@ -11,7 +11,7 @@ import { signInWithPopup } from "firebase/auth";
 import { Password } from "@mui/icons-material";
 
 export const Checkout = () => {
-  const {cart, getTotalPrice} = useContext(CartContext)
+  const {cart, getTotalPrice, clearCart} = useContext(CartContext)
   const [orderId, setOrderId] = useState(null)
 
   let total = getTotalPrice()
