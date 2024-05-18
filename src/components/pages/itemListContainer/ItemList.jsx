@@ -1,6 +1,6 @@
 import { Grid } from "@mui/material";
 import ItemCards from "../../common/productCard/ItemCards";
-import "/ItemListContainer.css";
+import "ItemListContainer.css";
 
 const ItemList = ({ items, error }) => {
   console.log(items);
